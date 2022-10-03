@@ -1,61 +1,54 @@
-import ReactCardFlip from 'react-card-flip';
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Slider from "react-slick";
+import FCard from "./FCard";
 
-class Teams extends Component {
-	constructor() {
-		super();
-		this.state = {
-			isFlipped: false
-		};
-		this.handleClick = this.handleClick.bind(this);
-	}
-
-	handleClick(e) {
-		e.preventDefault();
-		this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-	}
-
-	render() {
-		return (
-			<div id="teams">
-
-			<ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
-				{/* <div className='teams'> */}
-				<div className='teams' onClick={this.handleClick}>
-					<div>
-						<section>
-							<fig><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-								width={"100%"} /></fig>
-							<h5>Front of Card</h5>
-							<p>TEDX</p>
-						</section>
-					</div>
-				</div>
-				<div className='teams' onClick={this.handleClick}>
-					<div>
-						<section>
-							{/* <fig><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-								width={"100%"} /></fig> */}
-								<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-									Molestias veritatis dolorem facilis pariatur, porro ipsum 
-									numquam ullam similique minus officia accusantium, saepe odit'
-									illo illum. Voluptatum harum minima consectetur laudantium.
-								</h2>
-							<h5>Back of Card</h5>
-							<p>TEDX</p>
-						</section>
-					</div>
-				</div>
-
-
-				
-				{/* </div>	 */}
-			</ReactCardFlip>
-
-
-			</div>
-		)
-	}
+export default class Teams extends Component {
+  render() {
+    var settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+    return (
+      <div className="teams">
+        <h2> Teams </h2>
+        <Slider {...settings}>
+          <FCard />
+          <FCard />
+          <FCard />
+          <FCard />
+          <FCard />
+        </Slider>
+      </div>
+    );
+  }
 }
-
-export default Teams;

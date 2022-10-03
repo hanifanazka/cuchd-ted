@@ -13,7 +13,7 @@
 
 
 .head {
-    /* position: sticky; */
+    /* position: fixed; */
     font-family: Helvetica;
     z-index: 1;
     color: red;
@@ -67,6 +67,8 @@
     margin-top: 5%;
     position: relative;
     font-family: Helvetica;
+    /* font-family: Monster; */
+
     /* height: 800px; */
     background-color: inherit;
     display: flex;
@@ -385,14 +387,92 @@
 
 
 .react-rotating-text-cursor {
-    /* visibility: ; */
     color: white;
     width: 1px;
-    /* font-weight: 400; */
-    /* font-size: 50px; */
 }
 
 
+
+.cuchd h1{
+    max-width: 1400px;
+    margin: auto;
+    color: red;
+}
+
+.teams {
+    color: white;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.fcard section{
+    /* margin:; */
+    display: block;
+    border: white solid 2px;
+    max-width: 300px;
+    min-height: 500px;
+    background-image: linear-gradient(to bottom, white, #1a1a1a);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.cardf{
+    color: white;
+    text-align: center;
+}
+.cardf img {
+    opacity: 0.5;
+}
+.cardf img:hover{
+    opacity: 1;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.cardb {
+    color: #0e0d0d;
+    justify-content: center;
+}
+.cardb txt {
+    display: block;
+}
+/* 
+.teams {
+    margin-top: 10%;
+    position: relative;
+}
+.teams label {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 200px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index:20;
+    transition: all 600mx;
+}
+.card div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    text-align: center;
+    line-height: 200px;
+    backface-visibility: hidden;
+} */
 
 @media screen and (max-width: 990px) {
     .land fig {
@@ -421,84 +501,3 @@
     }
 }
 
-.cuchd h1{
-    max-width: 1400px;
-    margin: auto;
-    color: red;
-}
-
-
-.teams   {
-    margin-top: 2%;
-    padding: 2%;
-    /* height: 400px; */
-    font-family: Helvetica;
-    color: white;
-    /* background-color: aliceblue; */
-    text-align: center;
-    background-color: inherit;
-}
-
-.teams   div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.teams   div section {
-    width: 20%;
-    margin: 2%;
-    min-width: 300px;
-    background-image: linear-gradient(to bottom, white, #1a1a1a);
-    overflow: hidden;
-    border-radius: 20px;
-    /* border: 20px solid black; */
-}
-
-.teams   h3 {
-    text-decoration: none;
-    color: aliceblue;
-    display: inline-block;
-    position: relative;
-}
-
-.teams   h3::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    transform-origin: bottom right;
-    transition: transform 0.5s ease-out;
-}
-
-.teams   h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.teams   h5 {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    letter-spacing: 1px;
-    z-index: 1;
-    /* overflow: hidden; */
-    font-weight: 900;
-    /* color: rgb(223, 47, 47); */
-    /* text-shadow: 0px 0px 0px #ffff; */
-    /* text-shadow: 10px 10px 10px 200px black; */
-}
-
-.teams   p {
-    font-size: 15px;
-}
-
-.teams   div img {
-    opacity: 0.5;
-    z-index: -1;
-}
