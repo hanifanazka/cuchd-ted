@@ -19,6 +19,11 @@ export default function Cuchd() {
                 </h1>
                 <About />
                 <Theme />
+                <h1 style={{ color: "red", maxWidth: "1440px", margin: "20px auto", paddingLeft: "2%", fontWeight: "800" }}>
+                    <span style={{ padding: "5px", borderBottom: "4px red solid" }}>
+                    Team 
+                    </span>
+                </h1>
                 <Teams />
             </div>
         </>

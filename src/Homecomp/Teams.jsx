@@ -40,7 +40,7 @@ export default class Teams extends Component {
     };
     return (
       <div className="teams">
-        <h2> Teams </h2>
+        {/* <h2> Teams </h2> */}
         <Slider {...settings}>
           <FCard name="Yuvraj Singh Rajput" role="Organizer" />
           <FCard name="Gopi Gautam" role="Co-organizer" />
