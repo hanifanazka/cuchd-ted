@@ -2,9 +2,9 @@ import { MDBIcon } from "mdb-react-ui-kit"
 
 export default function Blog() {
   return (
-    <div id= "blog">
+    <div>
       <h1 style={{color:"red", maxWidth:"1440px",margin:"20px auto",paddingLeft:"2%",fontWeight:"800"}}>
-      <span style={{ padding:"5px",borderBottom:"4px red solid"}}>
+      <span style={{ padding:"5px"}}>
         Blogs </span>  
       </h1>
       <div className="blog">

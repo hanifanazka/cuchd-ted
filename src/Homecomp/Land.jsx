@@ -7,7 +7,7 @@ export default function Land() {
         <head   data-aos="fade-up">
           <h1>TEDX Coming to Chandigarh University</h1>
           <br></br>
-          <h3>Date of Event : 6'NOV 2022</h3>
+          <h3>Date of Event : 10'NOV 2022</h3>
           <br></br><br></br><br></br>
 
           <h1>Theme: Innovation and Youth</h1>

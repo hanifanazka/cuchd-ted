@@ -10,17 +10,18 @@ export default function Cuchd() {
         <>
             <div className="cuchd" id="cuchd">
                 <Land />
+                <div id="blog"></div>
                 <Blog />
                 {/* <h1>About Us</h1> */}
                 <h1 style={{ color: "red", maxWidth: "1440px", margin: "20px auto", paddingLeft: "2%", fontWeight: "800" }}>
-                    <span style={{ padding: "5px", borderBottom: "4px red solid" }}>
+                    <span style={{ padding: "5px"}}>
                     About Us 
                     </span>
                 </h1>
                 <About />
                 <Theme />
                 <h1 style={{ color: "red", maxWidth: "1440px", margin: "20px auto", paddingLeft: "2%", fontWeight: "800" }}>
-                    <span style={{ padding: "5px", borderBottom: "4px red solid" }}>
+                    <span style={{ padding: "5px"}}>
                     Team 
                     </span>
                 </h1>

@@ -10,7 +10,10 @@
 /* * {
     font-family: Helvetica;
 } */
-
+html {
+    /* scroll-behavior: smooth; */
+    scroll-margin-top: 180%;
+}
 
 .head {
     /* position: fixed; */
@@ -88,8 +91,15 @@
     /* top: 10%; */
     /* left: 10%; */
     display: block;
-}
 
+}
+.land h1{
+    color: red;
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: Monster;
+    /* letter-spacing: 4px; */
+}
 .land fig {
     width: 28%;
     margin-top: 8%;
@@ -242,7 +252,7 @@
 }
 
 
-@media screen and (max-width: 990px) {
+/* @media screen and (max-width: 990px) {
     .land fig {
         display: none;
     }
@@ -263,7 +273,7 @@
     .blog section {
         width: 100%;
     }
-}
+} */
 
 .navbar-light .navbar-toggler {
     /* background-color: white; */ 
@@ -396,7 +406,7 @@
 .cuchd h1{
     max-width: 1400px;
     margin: auto;
-    color: red;
+    /* color: red; */
 }
 
 .teams {
@@ -475,8 +485,18 @@
 } */
 
 @media screen and (max-width: 990px) {
-    .land fig {
-        display: none;
+    .land {
+        flex-direction: column;
+        /* display: none; */
+    }
+    .land fig{
+        display: block;
+        margin: auto;
+        /* border: 20px solid aqua; */
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        /* text-align: center; */
     }
 
     .land head {
