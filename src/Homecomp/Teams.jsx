@@ -42,11 +42,15 @@ export default class Teams extends Component {
       <div className="teams">
         <h2> Teams </h2>
         <Slider {...settings}>
-          <FCard />
-          <FCard />
-          <FCard />
-          <FCard />
-          <FCard />
+          <FCard name="Vansh" />
+          <FCard name="Abhay" />
+          <FCard name="Vansh" />
+          <FCard name="Abhay" />
+          <FCard name="Vansh" />
+          <FCard name="Abhay" />
+		  <FCard name="Vansh" />
+          <FCard name="Abhay" />
+
         </Slider>
       </div>
     );
