@@ -32,7 +32,7 @@ class FCard extends Component {
 						<div className='cardf' onClick={this.handleClick}>
 							<fig><img src='https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 							width={"100%"} /></fig>
-							<h2>{this.props.name}</h2>
+							<h3>{this.props.name}</h3>
 							<h5>{this.props.role}</h5>
 						</div>
 						<div className='cardb' onClick={this.handleClick}>

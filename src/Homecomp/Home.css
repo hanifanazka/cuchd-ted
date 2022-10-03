@@ -410,8 +410,8 @@
     /* margin:; */
     display: block;
     border: white solid 2px;
-    max-width: 300px;
-    min-height: 500px;
+    max-width: 250px;
+    min-height: 450px;
     background-image: linear-gradient(to bottom, white, #1a1a1a);
     display: flex;
     align-items: center;
