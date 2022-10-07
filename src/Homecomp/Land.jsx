@@ -35,8 +35,8 @@ export default function Land() {
 
         {Array.from({length: 7}, () =>
         <section>
-          <fig><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            width={"100%"}  /></fig>
+          <figure><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            width={"100%"}  /></figure>
             <h5>Coming Soon</h5>
             <p>TEDX</p>
           </section>
