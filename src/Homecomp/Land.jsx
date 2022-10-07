@@ -28,20 +28,22 @@ export default function Land() {
         </div>
       </div>
 
-      <div className="speakers bg-dark" id="speakers">
-        <h3>Speakers</h3>
-        <p>Speakers will be announced soon</p>
-        <div data-aos="fade-up">
+      <div className="/*speakers*/ bg-dark text-white py-5" id="speakers">
+        <div className="container">
+          <h3>Speakers</h3>
+          <p>Speakers will be announced soon</p>
+          <div data-aos="fade-up" className="row">
 
-        {Array.from({length: 7}, () =>
-        <section>
-          <figure><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            width={"100%"}  /></figure>
-            <h5>Coming Soon</h5>
-            <p>TEDX</p>
-          </section>
-        )}
+          {Array.from({length: 7}, () =>
+            <figure className="col-12 col-lg-4">
+              <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid" />
+              <figcaption><h5 className="fw-bold">Kunal Nandwani</h5></figcaption>
+              <p className="lead">Cofounder and CEO at uTrade Solutions</p>
+              <p>Start-up Entrepreneur with technology, financial markets, blockchain, electronic trading; and angel investing experience. @uTradeSolutions @hashcove @coveidentity @earthrorg @chandigarhangelsnetwork #startups Blogging at www.kunalnandwani.com Author of "Squaring the Blockchain Circle" and Startup Books. www.kunalnandwani.com/books</p>
+            </figure>
+          )}
 
+          </div>
         </div>
       </div>
 
