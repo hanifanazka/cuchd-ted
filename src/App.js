@@ -20,11 +20,12 @@ function App() {
       <Head />  
       <Routes>
         <Route path="/" element={<Cuchd />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/blog" element={<Blog />} />
         <Route path="/theme" element={<Theme />} />
         <Route path="/cuchd" element={<Cuchd />} />
         <Route path="/teams" element={<Teams />} /> */}
+        <Route path="*" element={<h1>404</h1>} />
       </Routes>
       <Foot />
   </div>
