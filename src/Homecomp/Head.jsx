@@ -7,13 +7,10 @@ import "./Home.css"
 
 function CollapsibleExample() {
   return (
-    <Navbar fixed="top" collapseOnSelect expand="lg" className='head' >
-      <Container style={{ maxWidth: "1500px" }}>
+    <Navbar collapseOnSelect expand="lg" className='head'>
+      <Container>
         <Navbar.Brand href="/" style={{ width: "80%" }}>
-          <fig style={{}}>
-            <img src={logo}
-              width={"50%"} />
-          </fig>
+          <img src={logo} width={"50%"} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
