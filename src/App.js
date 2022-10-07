@@ -27,7 +27,6 @@ function App() {
         <Route path="/teams" element={<Teams />} /> */}
       </Routes>
       <Foot />
-    <Particles id="tsparticles" />
   </div>
   );
 
