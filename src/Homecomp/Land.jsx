@@ -5,9 +5,16 @@ export default function Land() {
     <>
       <div className="bg-dark text-white py-5">
         <div className="container">
-          <h2 className="fw-bold">Theme: Innovation and Youth</h2>
-          <div>10 November 2022</div>
-          <div>Mohali, Chandigarh India</div>
+          <div className="row">
+            <div className="col-12 col-lg-6">
+              <h2 className="fw-bold">Theme: Innovation and Youth</h2>
+              <div>10 November 2022</div>
+              <div>Mohali, Chandigarh India</div>
+            </div>
+            <div className="col-12 col-lg-6 d-lg-flex align-items-center justify-content-end">
+              <a className="btn btn-danger rounded-0 mt-3 mt-lg-0" href="/TEDxChandigarhUniversity2022.ics">Save the date</a>
+            </div>
+          </div>
         </div>
       </div>
 
