@@ -1,4 +1,37 @@
 import pic from "../Assests/tedx.png";
+import * as luxon from "luxon";
+import { useEffect, useState } from "react";
+
+// TODO: Put this component inside component folder
+function CountDown(
+    {
+        fromDateTime = luxon.DateTime.now(),
+        toDateTime,
+        children
+    }) {
+    if (
+      !luxon.DateTime.isDateTime(fromDateTime) ||
+      !luxon.DateTime.isDateTime(toDateTime)
+    ) throw new Error("CountDown: needs a Luxon's DateTime object");
+
+    // force update this component every second
+    // on update, luxon.DateTime.now() will called and update the fromDateTime
+    const [_time, setTime] = useState(Date.now());
+    useEffect(() => {
+      const interval = setInterval(() => setTime(Date.now()), 1000);
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
+
+
+    const _FORMAT = ["years", "months", "days", "hours", "minutes", "seconds", "milliseconds"]
+    let duration = toDateTime.diff(fromDateTime, _FORMAT)
+    let durationZero = fromDateTime.diff(fromDateTime, _FORMAT)
+    let isPassed = duration.toMillis() < 0
+    let res = isPassed ? durationZero : duration
+    return children({...res.toObject(), isPassed})
+}
 
 export default function Land() {
   return (
@@ -18,6 +51,34 @@ export default function Land() {
         </fig>
         
       </div>
+      <CountDown toDateTime={luxon.DateTime.fromISO("2022-11-10T09:30:00+0530")}>
+        {(count) =>
+            <div className="card card-body position-absolute start-50 translate-middle">
+              <div className="row">
+                <div className="col text-center">
+                  <div className="lead">Months</div>
+                  {count.months}
+                </div>
+                <div className="col text-center">
+                  <div className="lead">Days</div>
+                  {count.days}
+                </div>
+                <div className="col text-center">
+                  <div className="lead">Hours</div>
+                  {count.hours}
+                </div>
+                <div className="col text-center">
+                  <div className="lead">Minutes</div>
+                  {count.minutes}
+                </div>
+                <div className="col text-center">
+                  <div className="lead">Seconds</div>
+                  {count.seconds}
+                </div>
+              </div>
+            </div>
+        }
+      </CountDown>
 
       <div className="about"  >
         <txt >
